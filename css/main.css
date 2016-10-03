@@ -2,14 +2,13 @@
  box-sizing: border-box;
 }
 
-
-
 /* ================================= 
   Base Element Styles
 ==================================== */
 
 body {
-  background: #fff;
+  margin-bottom: 80px;
+  background: #ccc;
 }
 
 input:placeholder-shown {
@@ -19,8 +18,12 @@ input:placeholder-shown {
 
 form {
   text-align: center;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+header {
+   background: #f2f2f2;
 }
 
 
@@ -34,7 +37,7 @@ form {
   font-size: 16px;
   padding: 12px;
   outline: none;
-  width: 460px;
+  width: 80%;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -42,9 +45,48 @@ form {
 
 #lightGallery {
   text-align: center;
+  padding: 30px 0;
 }
 
 #lightGallery img {
-  padding: 15px;
+  -webkit-box-shadow: 0 4px 10px 2px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 10px 2px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 10px 2px rgba(0, 0, 0, .3);
+  margin: 15px;
   vertical-align: bottom; /*removes space between images at the bottom*/
+  border: 3px solid #eee;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
+
+  /* ---- lightgallery styles ---- */
+
+.lg-sub-html {
+  width: 85%;
+}
+
+.lg-outer .lg-toogle-thumb {
+  
+}
+
+
+@media (min-width: 760px) {
+
+
+#searchBar {
+  width: 460px;
+}
+
+#lightGallery img:hover {
+  transform: scale(1.1);
+}
+
+  /* ---- lightgallery styles ---- */
+
+.lg-sub-html {
+  width: 600px;
+}
+
+}
+
